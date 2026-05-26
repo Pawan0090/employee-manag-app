@@ -21,7 +21,7 @@ pipeline {
         stage('Build & Push Backend') {
             steps {
                 // Securely logs into Docker Hub using the credentials we saved
-                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', passwordVariable: 'DOCKER_PASS', usernameVariable: 'DOCKER_USER_ID')]) {
+                withCredentials([usernamePassword(credentialsId: 'Docker-Cred', passwordVariable: 'DOCKER_PASS', usernameVariable: 'DOCKER_USER_ID')]) {
                     sh """
                     echo \$DOCKER_PASS | docker login -u \$DOCKER_USER_ID --password-stdin
                     cd backend
