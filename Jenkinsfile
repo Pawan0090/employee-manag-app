@@ -9,7 +9,7 @@ pipeline {
         MANIFEST_REPO   = '3tier-k8s-manifests'     // 📂 Your exact manifest repository
         NEW_TAG         = "v${BUILD_NUMBER}"
     }
-    
+    //test
     stages {
         stage('Pulling Latest Code') {
             steps {
