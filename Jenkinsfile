@@ -6,7 +6,7 @@ pipeline {
         BACKEND_REPO    = 'employee-backend'
         FRONTEND_REPO   = 'employee-frontend'
         GITHUB_USER     = 'Pawan0090' // 👈 Change to your GitHub username if different
-        MANIFEST_REPO   = 'employee-manag-app' // 👈 Your exact GitOps manifest repo name
+        MANIFEST_REPO   = '3tier-k8s-manifests' // 👈 Your exact GitOps manifest repo name
         NEW_TAG         = "v${BUILD_NUMBER}" // e.g., v1, v2, v3 automatically
     }
     
